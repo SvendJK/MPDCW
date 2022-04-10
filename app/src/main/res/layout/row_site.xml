@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    NAME SVEND KRISTENSEN-->
+<!--    STUDENTID : S1820691-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="80dip"
+    >
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/georssTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTxt"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/startPlaceholderTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start: "
+        android:textStyle="bold"
+        android:layout_below="@id/descriptionTxt"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/startDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTxt"
+        android:layout_marginLeft="40dip"
+
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/endPlaceholderTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ends: "
+        android:textStyle="bold"
+        android:layout_below="@id/startPlaceholderTxt"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/endDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startPlaceholderTxt"
+        android:layout_marginLeft="40dip"
+        android:textSize="12sp"
+        />
+
+
+
+</RelativeLayout>
+

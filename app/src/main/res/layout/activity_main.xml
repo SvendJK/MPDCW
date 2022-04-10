@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    NAME SVEND KRISTENSEN-->
+<!--    STUDENTID : S1820691-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/TSList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="180dp"
+        android:outlineAmbientShadowColor="@color/black"
+        >
+    </ListView>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="Search road"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:id="@+id/text_input"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:hint="Search for a road!"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="Search date"
+        android:textStyle="bold"
+        android:layout_marginLeft="245dp"
+
+        />
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/text_input"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:hint="Search for a date!"
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Current Incidents"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/radio_roadworks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Roadworks"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/radio_planned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Planned Roadworks"
+            android:textSize="12dp" />
+    </RadioGroup>
+</RelativeLayout>

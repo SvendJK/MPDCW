@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    NAME SVEND KRISTENSEN-->
+<!--    STUDENTID : S1820691-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+    <TextView
+        android:id="@+id/titleTxtMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionTxtMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTxtMap"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/startPlaceholderTxtMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start: "
+        android:textStyle="bold"
+        android:layout_below="@id/descriptionTxtMap"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/startDateTxtMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTxtMap"
+        android:layout_marginLeft="40dip"
+
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/endPlaceholderTxtMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ends: "
+        android:textStyle="bold"
+        android:layout_below="@id/startPlaceholderTxtMap"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/endDateTxtMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startPlaceholderTxtMap"
+        android:layout_marginLeft="40dip"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/pubDateTxtMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endDateTxtMap"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/linkTxtMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pubDateTxtMap"
+        android:textSize="12sp"
+        />
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
